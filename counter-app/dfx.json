@@ -1,0 +1,30 @@
+{
+  "canisters": {
+    "counter-app-backend": {
+      "candid": "src/counter-app-backend/counter-app-backend.did",
+      "declarations": {
+        "node_compatibility": true
+      },
+      "package": "counter-app-backend",
+      "type": "rust"
+    },
+    "counter-app-frontend": {
+      "dependencies": [
+        "counter-app-backend"
+      ],
+      "source": [
+        "src/counter-app-frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "counter-app-frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
