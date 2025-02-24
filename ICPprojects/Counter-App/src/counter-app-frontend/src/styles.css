@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+
+body {
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  font-family: 'Orbitron', sans-serif;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  padding: 20px;
+  overflow: hidden;
+}
+
+.container {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 40px;
+  border-radius: 20px;
+  backdrop-filter: blur(20px);
+  box-shadow: 0px 0px 40px rgba(0, 255, 255, 0.3);
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  width: 90%;
+  max-width: 500px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  text-shadow: 0px 0px 15px rgba(0, 255, 255, 0.9);
+}
+
+.counter {
+  font-size: 5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #00ffff;
+  text-shadow: 0px 0px 30px rgba(0, 255, 255, 1);
+  padding: 15px;
+  background: rgba(0, 255, 255, 0.2);
+  border-radius: 15px;
+  border: 2px solid rgba(0, 255, 255, 0.5);
+  transition: transform 0.3s;
+}
+
+.counter:hover {
+  transform: scale(1.05);
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.btn {
+  padding: 15px 25px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: all 0.4s ease-in-out;
+  box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.2);
+  min-width: 120px;
+}
+
+.increment {
+  background: linear-gradient(135deg, #00ff99, #00ccff);
+  color: #fff;
+}
+
+.increment:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 0px 30px rgba(0, 255, 153, 0.8);
+}
+
+.decrement {
+  background: linear-gradient(135deg, #ff416c, #ff4b2b);
+  color: #fff;
+}
+
+.decrement:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 0px 30px rgba(255, 65, 108, 0.8);
+}
+
+.reset {
+  background: linear-gradient(135deg, #ffea00, #ffb400);
+  color: #222;
+}
+
+.reset:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 0px 30px rgba(255, 234, 0, 0.8);
+}
+
+/* 🔹 Responsive Design for Smaller Screens */
+@media (max-width: 600px) {
+  .container {
+    width: 100%;
+    max-width: 400px;
+    padding: 30px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .counter {
+    font-size: 4rem;
+    padding: 10px;
+  }
+
+  .btn {
+    font-size: 1rem;
+    padding: 12px 20px;
+    min-width: 100px;
+  }
+
+  .buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+}
