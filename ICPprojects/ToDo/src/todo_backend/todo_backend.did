@@ -1,0 +1,6 @@
+service : {
+    add_task : (text : text) -> (nat);
+    remove_task : (id : nat) -> (bool);
+    complete_task : (id : nat) -> (bool);
+    view_tasks : () -> (vec record { id: nat; task: text; completed: bool }) query;
+}
