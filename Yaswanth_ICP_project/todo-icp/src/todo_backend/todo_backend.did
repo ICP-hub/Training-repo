@@ -1,0 +1,14 @@
+type Task = record {
+    id : nat64;
+    title : text;
+    is_completed : bool;
+};
+
+type Result = variant {
+    ok : Task;
+    err : text;
+};
+
+service : {
+    "toggle_is_completed" : (nat64) -> (Result);
+}
