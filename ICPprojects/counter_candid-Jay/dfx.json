@@ -1,0 +1,27 @@
+{
+  "canisters": {
+    "hello2_backend": {
+      "candid": "src/hello2_backend/hello2_backend.did",
+      "package": "hello2_backend",
+      "type": "rust"
+    },
+    "hello2_frontend": {
+      "dependencies": [
+        "hello2_backend"
+      ],
+      "source": [
+        "src/hello2_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "hello2_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
