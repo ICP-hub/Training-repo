@@ -23,7 +23,7 @@ The projects within this repository showcase a variety of decentralized solution
  │   ├── ⏳ Creating a Token Vesting App
  │   ├── 🎰 Building a Token Lottery
  │
- ├── 📁 Solidity Projects (Ongoing)
+ ├── 📁 Solidity Projects
  │   ├── ⚡ Secure and Re-Entrancy Voting System
  │   ├── 📜 dApp Development
  │
