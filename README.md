@@ -1,8 +1,8 @@
 # Training-repo: Blockchain Development Repository
 
-Welcome to **Training-repo**, a comprehensive repository dedicated to **blockchain development**. This repository serves as a hub for decentralized application (**dApp**) development and smart contract implementation across **Internet Computer (ICP), Solana, and Solidity** ecosystems.
+Welcome to **Training-repo**, a comprehensive repository dedicated to **blockchain development**. This repository serves as a hub for decentralized application (**dApp**) development and smart contract implementation across **Internet Computer (ICP), Solana, Solidity, Aptos, and Sui** ecosystems.
 
-The projects within this repository showcase a variety of decentralized solutions leveraging different blockchain frameworks. Whether you're interested in building scalable applications on **ICP**, experimenting with **Solana smart contracts**, or diving into **Ethereum-based Solidity development**, this repository has something for you!
+The projects within this repository showcase a variety of decentralized solutions leveraging different blockchain frameworks. Whether you're interested in building scalable applications on **ICP**, experimenting with **Solana smart contracts**, diving into **Ethereum-based Solidity development**, or exploring the **Aptos & Sui ecosystems**, this repository has something for you!
 
 ## 📂 Repository Structure
 
@@ -24,7 +24,11 @@ The projects within this repository showcase a variety of decentralized solution
  │   ├── 🎰 Building a Token Lottery
  │
  ├── 📁 Solidity Projects (Ongoing)
- │   ├── ⚡ Smart contract development in progress
+ │   ├── ⚡ Secure and Re-Entrancy Voting System
+ │   ├── 📜 dApp Development
+ │
+ ├── 📁 Aptos & Sui Projects (In Progress)
+ │   ├── 🚧 Projects under development
  │
  ├── 📜 .gitignore
  ├── 📜 LICENSE
@@ -77,13 +81,24 @@ A **fully decentralized lottery system** built on **Solana**, ensuring **provabl
 
 ---
 
-## ⛓ **Solidity Projects** (In Progress)
+## ⛓ **Solidity Projects**
 
-Our team is currently **developing smart contracts** in Solidity, focusing on **Ethereum and EVM-compatible blockchains**.
+### ⚡ Secure and Re-Entrancy Voting System
+A Solidity-based **secure voting system** preventing **re-entrancy attacks**, ensuring **fair and tamper-proof elections**.
 
-Stay tuned for **exciting Solidity-based projects** in this repository! 🚧
+### 📜 dApp Development
+Development of decentralized applications (**dApps**) using **Solidity and Ethereum smart contracts**.
+
+---
+
+## 🚀 **Aptos & Sui Projects** (In Progress)
+
+Aptos and Sui are **emerging Layer 1 blockchain platforms** focused on **scalability, security, and efficiency**. This section will feature projects that leverage the **Move programming language** for building next-generation decentralized applications.
+
+🚧 **Stay tuned for upcoming projects!**
 
 ---
 
 ## 📜 License
 This repository is licensed under the **MIT License**. See the [LICENSE](./LICENSE) file for more details.
+
