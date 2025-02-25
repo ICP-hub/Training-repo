@@ -87,9 +87,3 @@ Stay tuned for **exciting Solidity-based projects** in this repository! 🚧
 
 ## 📜 License
 This repository is licensed under the **MIT License**. See the [LICENSE](./LICENSE) file for more details.
-
-## 🤝 Contributing
-We welcome contributions! If you’d like to **enhance this repository**, feel free to:
-- **Fork the repository**
-- **Submit pull requests (PRs)**
-- **Suggest improvements via Issues**
