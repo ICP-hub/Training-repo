@@ -1,0 +1,5 @@
+[workspace]
+members = [
+    "src/todo-app-backend"
+, "src/todo-app-frontend"]
+resolver = "2"

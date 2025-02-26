@@ -1,0 +1,6 @@
+service : {
+  add_todo: (text: text) -> (record { id: nat64; title: text; completed: bool });
+  get_todos: () -> (vec record { id: nat64; title: text; completed: bool });
+  toggle_todo: (id: nat64) -> (opt record { id: nat64; title: text; completed: bool });
+  delete_todo: (id: nat64) -> (bool);
+}

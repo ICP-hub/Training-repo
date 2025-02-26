@@ -1,0 +1,27 @@
+{
+  "canisters": {
+    "c-app-backend": {
+      "candid": "src/c-app-backend/c-app-backend.did",
+      "package": "c-app-backend",
+      "type": "rust"
+    },
+    "c-app-frontend": {
+      "dependencies": [
+        "c-app-backend"
+      ],
+      "source": [
+        "src/c-app-frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "c-app-frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}

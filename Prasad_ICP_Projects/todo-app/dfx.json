@@ -1,0 +1,29 @@
+{
+  "canisters": {
+    "todo-app-backend": {
+      "type": "rust",
+      "candid": "src/todo-app-backend/todo-app-backend.did",
+      "package": "todo-app-backend",
+      "build": "cargo build --target wasm32-unknown-unknown --release",
+      "wasm": "target/wasm32-unknown-unknown/release/todo-app-backend.wasm"
+    },
+    "todo-app-frontend": {
+      "dependencies": [
+        "todo-app-backend"
+      ],
+      "source": [
+        "src/todo-app-frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "todo-app-frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
