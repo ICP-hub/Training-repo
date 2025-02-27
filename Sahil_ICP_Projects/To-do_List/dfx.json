@@ -1,0 +1,27 @@
+{
+  "canisters": {
+    "tofo-list-backend": {
+      "candid": "src/tofo-list-backend/tofo-list-backend.did",
+      "package": "tofo-list-backend",
+      "type": "rust"
+    },
+    "tofo-list-frontend": {
+      "dependencies": [
+        "tofo-list-backend"
+      ],
+      "source": [
+        "src/tofo-list-frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "tofo-list-frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
