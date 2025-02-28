@@ -1,0 +1,12 @@
+[package]
+name = "Prasheel_counter_dapp_move"
+version = "0.1.0"
+authors = ["Prasheel Suvarna"]
+
+[addresses]
+counter_addr = "0x41625272a0e0e1f75c5d377bd4e42bde88b2f09fea09a0e7dbcbbb14299dec0e"  
+
+[dependencies.AptosFramework]
+git = "https://github.com/aptos-labs/aptos-core.git"
+rev = "main"
+subdir = "aptos-move/framework/aptos-framework"

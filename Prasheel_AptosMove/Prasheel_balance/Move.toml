@@ -1,0 +1,15 @@
+[package]
+name = "balance"
+version = "1.0.0"
+authors = []
+
+[addresses]
+balance = "0x52a0ea3bd50d3e7ca95e6580f7e49e9c0a6f78b435ad527037c06474cb3b4648"
+
+
+[dependencies.AptosFramework]
+git = "https://github.com/aptos-labs/aptos-framework.git"
+rev = "mainnet"
+subdir = "aptos-framework"
+
+[dev-dependencies]
