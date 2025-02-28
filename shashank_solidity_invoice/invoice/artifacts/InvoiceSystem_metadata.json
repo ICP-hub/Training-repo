@@ -1,0 +1,243 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "id",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "customer",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "totalAmount",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "taxAmount",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "discount",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "finalAmount",
+						"type": "uint256"
+					}
+				],
+				"name": "InvoiceCreated",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "id",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "customer",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "InvoicePaid",
+				"type": "event"
+			},
+			{
+				"inputs": [],
+				"name": "TAX_PERCENTAGE",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_customer",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_totalAmount",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_discount",
+						"type": "uint256"
+					}
+				],
+				"name": "createInvoice",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "invoiceCounter",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "invoices",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "id",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "customer",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "totalAmount",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "taxAmount",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "discount",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "finalAmount",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bool",
+						"name": "paid",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "owner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_invoiceId",
+						"type": "uint256"
+					}
+				],
+				"name": "payInvoice",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"invoice/invoice1.sol": "InvoiceSystem"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"invoice/invoice1.sol": {
+			"keccak256": "0x7aa9d340a7be72b63fa92f3163e318cc3bf9aee39cb58838e7113be49086ba84",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://5b66b5e6f96dcb04abb80bbf977117ae9cc7ec70484c37f7f270dc487bcd54dd",
+				"dweb:/ipfs/QmaYh6XpZZ7wAzoqa5SYsC34BhH7gSmbJdmKHpXNjBh24w"
+			]
+		}
+	},
+	"version": 1
+}
