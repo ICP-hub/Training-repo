@@ -1,0 +1,3 @@
+[submodule "Ethereum_projects_pratham/discount_calculating/lib/forge-std"]
+	path = Ethereum_projects_pratham/discount_calculating/lib/forge-std
+	url = https://github.com/foundry-rs/forge-std
