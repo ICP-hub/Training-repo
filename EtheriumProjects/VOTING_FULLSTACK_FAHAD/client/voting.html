@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Futuristic Voting DApp</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #0a0a1a;
+            --text-color: #e0e0ff;
+            --neon-blue: #00f3ff;
+            --neon-purple: #9d00ff;
+            --card-bg: rgba(255, 255, 255, 0.1);
+        }
+
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 800px;
+        }
+
+        #connectWalletSection, #pollSection {
+            text-align: center;
+        }
+
+        #pollSection {
+            display: none;
+        }
+
+        .btn {
+            font-family: 'Orbitron', sans-serif;
+            background-color: transparent;
+            color: var(--neon-blue);
+            border: 2px solid var(--neon-blue);
+            padding: 12px 24px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border-radius: 30px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            box-shadow: 0 0 10px var(--neon-blue);
+        }
+
+        .btn:hover {
+            background-color: var(--neon-blue);
+            color: var(--bg-color);
+            box-shadow: 0 0 20px var(--neon-blue);
+        }
+
+        .poll-card {
+            background: var(--card-bg);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 0 20px rgba(0, 243, 255, 0.3);
+            margin-top: 30px;
+        }
+
+        .poll-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .poll-title {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 24px;
+            color: var(--neon-purple);
+            text-shadow: 0 0 5px var(--neon-purple);
+        }
+
+        .poll-status {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 18px;
+            color: var(--neon-blue);
+        }
+
+        .poll-description {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        #choices {
+            display: grid;
+            gap: 15px;
+        }
+
+        .options {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid var(--neon-blue);
+            border-radius: 15px;
+            padding: 15px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .options:hover {
+            background: rgba(255, 255, 255, 0.1);
+            box-shadow: 0 0 15px var(--neon-blue);
+        }
+
+        .option {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 16px;
+        }
+
+        @keyframes glow {
+            0% { box-shadow: 0 0 5px var(--neon-blue); }
+            50% { box-shadow: 0 0 20px var(--neon-blue), 0 0 30px var(--neon-purple); }
+            100% { box-shadow: 0 0 5px var(--neon-blue); }
+        }
+
+        .glow {
+            animation: glow 2s infinite;
+        }
+    </style>
+    <script type="module" src="voting.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div id="connectWalletSection">
+            <button id="connectWallet" class="btn glow">Connect Wallet</button>
+        </div>
+        <div id="pollSection">
+            <div class="poll-card">
+                <div class="poll-header">
+                    <h2 class="poll-title">Futuristic Poll</h2>
+                    <span class="poll-status">Active</span>
+                </div>
+                <p class="poll-description">Vote for your favorite futuristic technology. Your choice shapes the future!</p>
+                <div id="choices"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
